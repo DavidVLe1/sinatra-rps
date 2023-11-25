@@ -1,0 +1,35 @@
+<div>
+  <a href="/rock">
+    Play Rock
+  </a>
+</div>
+
+<div>
+  <a href="/paper">
+    Play Paper
+  </a>
+</div>
+
+<div>
+  <a href="/scissors">
+    Play Scissors
+  </a>
+</div>
+
+<h2>
+  We played paper!
+</h2>
+
+<h2><%="They played #{@cpu_random_choice}!"%></h2>
+
+<% if @cpu_random_choice == "rock" %>
+  <h2>We won!</h2>
+<% elsif @cpu_random_choice == "scissors" %>
+  <h2>We lost!</h2>
+<% else %>
+  <h2>We tied!</h2>
+<% end %>
+
+<a href="/">
+  Rules
+</a>
